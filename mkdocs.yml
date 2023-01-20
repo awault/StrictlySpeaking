@@ -3,3 +3,5 @@ site_url: https://awault.github.io/StrictlySpeaking
 nav:
     - Home: index.md
     - About: about.md
+theme:
+    name: bootstrap4
