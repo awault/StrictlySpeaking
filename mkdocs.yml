@@ -1,7 +1,28 @@
 site_name: Strictly Speaking
+site_author: Adam Ault
 site_url: https://awault.github.io/StrictlySpeaking
 nav:
     - Home: index.md
     - About: about.md
+    - Blog: A_New_Blog_Post.ipynb
 theme:
-    name: bootstrap4
+    name: material
+    palette:
+        primary: blue grey
+        accent: deep orange
+    favicon: img/favicon.ico
+    logo: img/logo.png
+    features:
+        - navigation.tabs
+extra_css:
+    - custom.css
+markdown_extensions:
+    - toc:
+        toc_depth: 2
+copyright: Copyright &copy; 2023 Adam Ault
+
+extra:
+  generator: false
+    
+
+
