@@ -1,6 +1,5 @@
 site_name: Strictly Speaking
 site_author: Adam Ault
-site_description: technology, economics and financial markets
 site_url: https://awault.github.io/StrictlySpeaking/
 repo_name: awault/StrictlySpeaking
 repo_url: https://github.com/awault/StrictlySpeaking
@@ -21,7 +20,6 @@ theme:
       - navigation.tracking
       - search.suggest
       - search.highlight
-      - search.share
     
 # Extensions
 markdown_extensions:
@@ -56,7 +54,3 @@ extra:
     link: https://www.linkedin.com/in/awault
     name: Adam Ault
   generator: false # hide the line "Made with Material for MkDocs"
-
-  extra_css:
-    - assets/extra.css
-    
