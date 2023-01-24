@@ -1,6 +1,7 @@
 site_name: Strictly Speaking
 site_author: Adam Ault
 site_url: https://awault.github.io/StrictlySpeaking/
+repo_name: https://github.com/awault/StrictlySpeaking
 
 theme:
     name: material
@@ -9,11 +10,7 @@ theme:
         accent: deep orange
     favicon: img/favicon.ico
     logo: img/logo.png
-    custom_dir: overrides
-    features:
-        - navigation.tabs
-extra_css:
-    - custom.css
+
 markdown_extensions:
     - toc:
         toc_depth: 2
@@ -24,7 +21,12 @@ plugins:
   - blogging:
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
-        - Blog
-      template: overrides/custom-blog.html
-
-
+        - blog
+      template: override/custom-blog.html
+            # GLOBAL CONFIG: configs apply to all categories
+      time_format: '%m/%d/%Y %H:%M'
+      meta_time_format: '%m/%d/%Y %H:%M'
+      features:
+        tags:
+          index_page: tags.md
+          insert: top
