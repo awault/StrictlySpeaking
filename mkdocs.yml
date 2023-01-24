@@ -1,23 +1,39 @@
 site_name: Strictly Speaking
 site_author: Adam Ault
 site_url: https://awault.github.io/StrictlySpeaking/
-repo_name: https://github.com/awault/StrictlySpeaking
+repo_name: awault/StrictlySpeaking
+repo_url: https://github.com/awault/StrictlySpeaking
 
+edit_uri: ""
+copyright: Copyright &copy; 2023 Adam Ault
+
+# Theme
 theme:
     name: material
     palette:
         primary: blue grey
         accent: deep orange
-    favicon: img/favicon.ico
     logo: img/logo.png
-
+    favicon: img/favicon.ico
+    features:
+      - navigation.tabs
+      - navigation.tracking
+      - search.suggest
+      - search.highlight
+    
+# Extensions
 markdown_extensions:
     - toc:
         toc_depth: 2
-copyright: Copyright &copy; 2023 Adam Ault
-extra:
-  generator: false
+    - attr_list # allowed to add HTML attributes and CSS classes
+
+
+
+
+# Plugins
 plugins:
+  - search
+
   - blogging:
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
@@ -26,7 +42,15 @@ plugins:
             # GLOBAL CONFIG: configs apply to all categories
       time_format: '%m/%d/%Y %H:%M'
       meta_time_format: '%m/%d/%Y %H:%M'
-      features:
-        tags:
-          index_page: tags.md
-          insert: top
+
+
+# Customization
+extra:
+  social: 
+  - icon: fontawesome/brands/github
+    link: https://github.com/awault
+    name: awault
+  - icon: fontawesome/brands/linkedin-in
+    link: https://www.linkedin.com/in/awault
+    name: Adam Ault
+  generator: false # hide the line "Made with Material for MkDocs"
