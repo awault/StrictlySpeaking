@@ -1,10 +1,7 @@
 site_name: Strictly Speaking
 site_author: Adam Ault
 site_url: https://awault.github.io/StrictlySpeaking/
-nav:
-    - Home: index.md
-    - About: about.md
-    - Blog: blog.md
+
 theme:
     name: material
     palette:
@@ -27,21 +24,7 @@ plugins:
   - blogging:
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
-        - blog
-      template: override/custom-blog.html
-
-      # INDIVIDUAL CATEGORIES: configs for {{ blog_content name }}
-      categories:
-        - name: reviews
-          dirs:
-            - reviews
-   
-      # GLOBAL CONFIG: configs apply to all categories
-      time_format: '%d/%m/%y %H:%M:%S'
-      meta_time_format: '%Y-%m-%d %H:%M:%S'
-      features:
-        tags:
-          index_page: tags.md
-          insert: top    
+        - Blog
+      template: overrides/custom-blog.html
 
 
