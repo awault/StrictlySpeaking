@@ -29,9 +29,6 @@ markdown_extensions:
         toc_depth: 2
     - attr_list # allowed to add HTML attributes and CSS classes
 
-
-
-
 # Plugins
 plugins:
   - search
