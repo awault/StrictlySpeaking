@@ -1,8 +1,6 @@
 ---
-description: "a good site"
+title: Recent Posts
 hide:       
   - navigation
 ---
-# Recent Posts
-
 {{ blog_content }}
