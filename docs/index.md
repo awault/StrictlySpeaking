@@ -1,6 +1,5 @@
 ---
-title: Home
-description: ""
+description: "a good site"
 hide:       
   - navigation
 ---
