@@ -3,3 +3,15 @@ span.md-ellipsis {
     font-size: 1rem;
 }
 
+div.md-content {
+    max-width: 700px;
+}
+
+.md-typeset h1 {
+    font-size: 1.45rem;
+}
+
+p {
+    font-size: .75rem;
+}
+
