@@ -2,22 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://awault.github.io/StrictlySpeaking/</loc>
-         <lastmod>2023-01-26</lastmod>
+         <lastmod>2023-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://awault.github.io/StrictlySpeaking/about/</loc>
-         <lastmod>2023-01-26</lastmod>
+         <lastmod>2023-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://awault.github.io/StrictlySpeaking/tags/</loc>
-         <lastmod>2023-01-26</lastmod>
+         <lastmod>2023-02-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://awault.github.io/StrictlySpeaking/Blog/chart_spx/</loc>
+         <lastmod>2023-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://awault.github.io/StrictlySpeaking/Blog/ten_rules/</loc>
-         <lastmod>2023-01-26</lastmod>
+         <lastmod>2023-02-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

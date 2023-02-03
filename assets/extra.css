@@ -12,6 +12,10 @@ div.md-content {
 }
 
 p {
-    font-size: .75rem;
+    font-size: .7rem;
+}
+
+.md-typeset h3 {
+    font-size: 1.1rem;
 }
 
