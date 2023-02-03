@@ -1,2 +1,7 @@
 # Build Files
-site\
+site/
+
+# Data Files
+data/
+
+

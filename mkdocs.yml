@@ -26,20 +26,11 @@ theme:
       - search.highlight
       - search.share
     
-# Extensions
-markdown_extensions:
-    - toc:
-        toc_depth: 2
-    - attr_list # allowed to add HTML attributes and CSS classes
-
 # Plugins
 plugins:
   - search
   - mkdocs-jupyter
-
   - blogging:
-      execute: True
-      
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
         - blog
@@ -51,7 +42,6 @@ plugins:
         tags:
           index_page: tags.md
           insert: top
-
 
 # Customization
 extra:
@@ -66,3 +56,9 @@ extra:
 
 extra_css:
     - assets/extra.css
+
+# Extensions
+#markdown_extensions:
+#    - toc:
+#        toc_depth: 2
+#    - attr_list # allowed to add HTML attributes and CSS classes
