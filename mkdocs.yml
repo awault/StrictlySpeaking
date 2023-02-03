@@ -35,8 +35,11 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
+  - mkdocs-jupyter
 
   - blogging:
+      execute: True
+      
       # GLOBAL CATEGORY: configs for {{ blog_content }}
       dirs:
         - blog
