@@ -19,3 +19,18 @@ p {
     font-size: 1.1rem;
 }
 
+h1 {
+    color:#3e5159
+}
+
+h2 {
+    color: #546d78
+}
+
+h3 {
+    color: #697f88
+}
+
+th, td {
+    font-family: Arial
+}
