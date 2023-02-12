@@ -1979,10 +1979,10 @@ class="
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">spx_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/spx.csv&quot;</span><span class="p">)</span>
-<span class="n">spx_data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">spx_data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt">spx_data = pd.read_csv("../../data/spx.csv")
-spx_data.tail(3)</div>
+print(spx_data.tail(3))</div>
     
         </div>
     </div>
@@ -2000,66 +2000,16 @@ spx_data.tail(3)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Date</th>
-      <th>Open</th>
-      <th>High</th>
-      <th>Low</th>
-      <th>Close</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>267</th>
-      <td>01/04/22</td>
-      <td>4804.51</td>
-      <td>4818.62</td>
-      <td>4774.27</td>
-      <td>4793.54</td>
-    </tr>
-    <tr>
-      <th>268</th>
-      <td>01/03/22</td>
-      <td>4778.14</td>
-      <td>4796.64</td>
-      <td>4758.17</td>
-      <td>4796.56</td>
-    </tr>
-    <tr>
-      <th>269</th>
-      <td>12/31/21</td>
-      <td>4775.21</td>
-      <td>4786.83</td>
-      <td>4765.75</td>
-      <td>4766.18</td>
-    </tr>
-  </tbody>
-</table>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>         Date     Open     High      Low    Close
+267  01/04/22  4804.51  4818.62  4774.27  4793.54
+268  01/03/22  4778.14  4796.64  4758.17  4796.56
+269  12/31/21  4775.21  4786.83  4765.75  4766.18
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -2173,10 +2123,10 @@ Index([&#39;Date&#39;, &#39; Open&#39;, &#39; High&#39;, &#39; Low&#39;, &#39; C
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">housing</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/housing.csv&quot;</span><span class="p">)</span>
-<span class="n">housing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">housing</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 <div id="cell-7" class="clipboard-copy-txt">housing = pd.read_csv("../../data/housing.csv")
-housing.head()</div>
+print(housing.head(3))</div>
     
         </div>
     </div>
@@ -2194,179 +2144,28 @@ housing.head()</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>   Order        PID  MS SubClass MS Zoning  Lot Frontage  Lot Area Street  \
+0      1  526301100           20        RL         141.0     31770   Pave   
+1      2  526350040           20        RH          80.0     11622   Pave   
+2      3  526351010           20        RL          81.0     14267   Pave   
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+  Alley Lot Shape Land Contour  ...  Fence Misc Feature Misc Val Mo Sold  \
+0   NaN       IR1          Lvl  ...    NaN          NaN        0       5   
+1   NaN       Reg          Lvl  ...  MnPrv          NaN        0       6   
+2   NaN       IR1          Lvl  ...    NaN         Gar2    12500       6   
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+  Yr Sold Sale Type Sale Condition SalePrice           Year            Rooms  
+0    2010       WD          Normal    215000  1999 or older  7 rooms or more  
+1    2010       WD          Normal    105000  1999 or older  6 rooms or less  
+2    2010       WD          Normal    172000  1999 or older  6 rooms or less  
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Order</th>
-      <th>PID</th>
-      <th>MS SubClass</th>
-      <th>MS Zoning</th>
-      <th>Lot Frontage</th>
-      <th>Lot Area</th>
-      <th>Street</th>
-      <th>Alley</th>
-      <th>Lot Shape</th>
-      <th>Land Contour</th>
-      <th>...</th>
-      <th>Fence</th>
-      <th>Misc Feature</th>
-      <th>Misc Val</th>
-      <th>Mo Sold</th>
-      <th>Yr Sold</th>
-      <th>Sale Type</th>
-      <th>Sale Condition</th>
-      <th>SalePrice</th>
-      <th>Year</th>
-      <th>Rooms</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>526301100</td>
-      <td>20</td>
-      <td>RL</td>
-      <td>141.0</td>
-      <td>31770</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>5</td>
-      <td>2010</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>215000</td>
-      <td>1999 or older</td>
-      <td>7 rooms or more</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>526350040</td>
-      <td>20</td>
-      <td>RH</td>
-      <td>80.0</td>
-      <td>11622</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>...</td>
-      <td>MnPrv</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>6</td>
-      <td>2010</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>105000</td>
-      <td>1999 or older</td>
-      <td>6 rooms or less</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>526351010</td>
-      <td>20</td>
-      <td>RL</td>
-      <td>81.0</td>
-      <td>14267</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>Gar2</td>
-      <td>12500</td>
-      <td>6</td>
-      <td>2010</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>172000</td>
-      <td>1999 or older</td>
-      <td>6 rooms or less</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>526353030</td>
-      <td>20</td>
-      <td>RL</td>
-      <td>93.0</td>
-      <td>11160</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>Reg</td>
-      <td>Lvl</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>4</td>
-      <td>2010</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>244000</td>
-      <td>1999 or older</td>
-      <td>7 rooms or more</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>527105010</td>
-      <td>60</td>
-      <td>RL</td>
-      <td>74.0</td>
-      <td>13830</td>
-      <td>Pave</td>
-      <td>NaN</td>
-      <td>IR1</td>
-      <td>Lvl</td>
-      <td>...</td>
-      <td>MnPrv</td>
-      <td>NaN</td>
-      <td>0</td>
-      <td>3</td>
-      <td>2010</td>
-      <td>WD</td>
-      <td>Normal</td>
-      <td>189900</td>
-      <td>1999 or older</td>
-      <td>6 rooms or less</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 84 columns</p>
+[3 rows x 84 columns]
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -2891,7 +2690,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2979,7 +2778,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3014,7 +2813,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -3046,38 +2845,6 @@ class="
 
 </div>
 
-</div>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-16">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span>
-</pre></div>
-<div id="cell-16" class="clipboard-copy-txt"></div>
-    
-        </div>
-    </div>
-
-</div>
 </div>
 
 </div>
