@@ -1,5 +1,5 @@
-# Build Files
-#site/
+# Build Files used by gh_pages automation after mkdocs 
+site/
 
 # Data Files
 #data/
