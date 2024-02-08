@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://awault.github.io/StrictlySpeaking/Blog/new_blog/</loc>
+         <lastmod>2024-02-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://awault.github.io/StrictlySpeaking/Blog/template_charts/</loc>
          <lastmod>2024-02-08</lastmod>
          <changefreq>daily</changefreq>
