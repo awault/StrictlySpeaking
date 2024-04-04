@@ -1,0 +1,5 @@
+This folder contains drafts and templates for the blog. 
+
+The contents of this folder will not be rendered by mkdocs when building the site.
+
+The contents of this folder will be displayed when viewing on the dev-server.
