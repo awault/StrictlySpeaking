@@ -9,6 +9,8 @@ This blog is constructed with [MkDocs](https://www.mkdocs.org/) and hosted on [G
 Developed in mkd_py311 environment. 
 
 <!-- COMMENTS
+To view the website locally: mkdocs serve
+
 When changes are ready to be deployed:
 
 First, build the site: mkdocs build
